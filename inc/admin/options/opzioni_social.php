@@ -8,13 +8,13 @@ function dci_register_social_options(){
      */
     $args = array(
         'id'           => 'dci_options_socials',
-        'title'        => esc_html__( 'Socialmedia', 'design_comuni_italia' ),
+        'title'        => esc_html__( 'Social', 'design_comuni_italia' ),
         'object_types' => array( 'options-page' ),
         'option_key'   => 'socials',
         'capability'    => 'manage_options',
         'parent_slug'  => 'dci_options',
         'tab_group'    => 'dci_options',
-        'tab_title'    => __('Socialmedia', "design_comuni_italia"),	);
+        'tab_title'    => __('Social', "design_comuni_italia"),	);
 
     // 'tab_group' property is supported in > 2.4.0.
     if ( version_compare( CMB2_VERSION, '2.4.0' ) ) {

@@ -89,6 +89,9 @@ function dci_add_sito_tematico_metaboxes() {
             'name' => __('Immagine', 'design_comuni_italia' ),
             'desc' => __( 'Seleziona un\'immagine da mostrare  nella Card del sito tematico', 'design_comuni_italia' ),
             'type' => 'file',
+            'options' => array(
+                'url'=>false
+            ),
             'query_args' => array( 'type' => 'image' ),
         )
     );

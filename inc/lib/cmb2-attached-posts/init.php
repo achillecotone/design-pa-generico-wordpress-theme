@@ -121,7 +121,7 @@ class WDS_CMB2_Attached_Posts_Field {
         $filter_boxes = '';
         // Check 'filter' setting
         if ( $this->field->options( 'filter_boxes' ) ) {
-            $filter_boxes = '<div class="search-wrap"><input type="text" placeholder="' . sprintf( __( 'Filter %s', 'cmb' ), $post_type_labels ) . '" class="regular-text search" name="%s" /></div>';
+            $filter_boxes = '<div class="search-wrap"><input type="text" placeholder="' . sprintf( __( 'Filtra %s', 'cmb' ), $post_type_labels ) . '" class="regular-text search" name="%s" /></div>';
         }
 
         // Check to see if we have any meta values saved yet
@@ -139,7 +139,7 @@ class WDS_CMB2_Attached_Posts_Field {
 
         // Open our retrieved, or found posts, list
         echo '<div class="retrieved-wrap column-wrap">';
-        echo '<h4 class="attached-posts-section">' . sprintf( __( 'Available %s', 'cmb' ), $post_type_labels ) . '</h4>';
+        echo '<h4 class="attached-posts-section">' . sprintf( __( 'Elenco degli %s', 'cmb' ), $post_type_labels ) . '</h4>';
 
         // Set .has_thumbnail
         $has_thumbnail = $this->field->options( 'show_thumbnails' ) ? ' has-thumbnails' : '';
@@ -179,7 +179,7 @@ class WDS_CMB2_Attached_Posts_Field {
 
         // Open our attached posts list
         echo '<div class="attached-wrap column-wrap">';
-        echo '<h4 class="attached-posts-section">' . sprintf( __( 'Attached %s', 'cmb' ), $post_type_labels ) . '<span class="attached-posts-remaining hidden">(<span class="attached-posts-remaining-number"></span> remaining)</span></span></h4>';
+        echo '<h4 class="attached-posts-section">' . sprintf( __( '%s Selezionati ', 'cmb' ), $post_type_labels ) . '<span class="attached-posts-remaining hidden">(<span class="attached-posts-remaining-number"></span> rimanenti)</span></span></h4>';
 
         if ( $filter_boxes ) {
             printf( $filter_boxes, 'attached-search' );

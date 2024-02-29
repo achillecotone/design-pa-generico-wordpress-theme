@@ -143,6 +143,7 @@ function loadSvg(){
         'it-medium-square',
         'it-telegram',
         'it-twitter',
+        'it-twitter-x',
         'it-twitter-square',
         'it-whatsapp',
         'it-whatsapp-square',

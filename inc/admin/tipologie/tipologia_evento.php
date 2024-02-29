@@ -337,12 +337,8 @@ function dci_add_eventi_metaboxes() {
         'id' => $prefix . 'punti_contatto',
         'name'        => __( 'Punti di contatto *', 'design_comuni_italia' ),
         'desc' => __( 'Telefono, mail o altri punti di contatto<br><a href="post-new.php?post_type=punto_contatto">Inserisci Punto di Contatto</a>' , 'design_comuni_italia' ),
-        'type'    => 'pw_multiselect',
-        'options' => dci_get_posts_options('punto_contatto'),
-        'attributes'    => array(
-            'required'    => 'required',
-            'placeholder' =>  __( ' Seleziona i Punti di Contatto', 'design_comuni_italia' ),
-        ),
+        'type'    => 'text',
+
     ) );
 
     //Ulteriori informazioni

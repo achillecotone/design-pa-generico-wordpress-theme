@@ -99,14 +99,9 @@ function dci_add_notizia_metaboxes() {
 
     $cmb_apertura->add_field( array(
         'id' => $prefix . 'a_cura_di',
-        'name'    => __( 'A cura di *', 'design_comuni_italia' ),
+        'name'    => __( 'A cura di', 'design_comuni_italia' ),
         'desc' => __( 'Ufficio che ha curato il comunicato (presumibilmente l\'ufficio comunicazione)' , 'design_comuni_italia' ),
-        'type'    => 'pw_multiselect',
-        'options' => dci_get_posts_options('unita_organizzativa'),
-        'attributes'    => array(
-            'required'    => 'required',
-            'placeholder' =>  __( 'Seleziona le unità organizzative', 'design_comuni_italia' ),
-        ),
+        'type'    => 'text',
     ) );
 
     $cmb_apertura->add_field( array(
@@ -114,6 +109,12 @@ function dci_add_notizia_metaboxes() {
         'desc' => __( 'Immagine principale della notizia' , 'design_comuni_italia' ),
         'id'             => $prefix . 'immagine',
         'type' => 'file',
+        'options' => array(
+            'url'=> false
+        ),
+        'text'=> array(
+            'add_upload_files_text'=> 'Aggiungi'
+        ),
         'query_args' => array( 'type' => 'image' ),
     ) );
 
@@ -144,26 +145,28 @@ function dci_add_notizia_metaboxes() {
         'date_format' => 'd-m-Y',
     ) );
 
-    $cmb_apertura->add_field( array(
-        'id' => $prefix . 'persone',
-        'name'    => __( 'Persone', 'design_comuni_italia' ),
-        'desc' => __( 'Riferimenti a persone dell\'amministrazione citate nella notizia' , 'design_comuni_italia' ),
-        'type'    => 'pw_multiselect',
-        'options' => dci_get_posts_options('persona_pubblica'),
-        'attributes' => array(
-            'placeholder' =>  __( 'Seleziona le Persone Pubbliche', 'design_comuni_italia' ),
-        ),
-    ) );
-    $cmb_apertura->add_field( array(
-        'id' => $prefix . 'luoghi',
-        'name'    => __( 'Luoghi', 'design_comuni_italia' ),
-        'desc' => __( 'Riferimenti a luoghi del Comune citati nella notizia' , 'design_comuni_italia' ),
-        'type'    => 'pw_multiselect',
-        'options' => dci_get_posts_options('luogo'),
-        'attributes' => array(
-            'placeholder' =>  __( 'Seleziona i Luoghi', 'design_comuni_italia' ),
-        ),
-    ) );
+
+
+//    $cmb_apertura->add_field( array(
+//        'id' => $prefix . 'persone',
+//        'name'    => __( 'Persone', 'design_comuni_italia' ),
+//        'desc' => __( 'Riferimenti a persone dell\'amministrazione citate nella notizia' , 'design_comuni_italia' ),
+//        'type'    => 'pw_multiselect',
+//        'options' => dci_get_posts_options('persona_pubblica'),
+//        'attributes' => array(
+//            'placeholder' =>  __( 'Seleziona le Persone Pubbliche', 'design_comuni_italia' ),
+//        ),
+//    ) );
+//    $cmb_apertura->add_field( array(
+//        'id' => $prefix . 'luoghi',
+//        'name'    => __( 'Luoghi', 'design_comuni_italia' ),
+//        'desc' => __( 'Riferimenti a luoghi del Comune citati nella notizia' , 'design_comuni_italia' ),
+//        'type'    => 'pw_multiselect',
+//        'options' => dci_get_posts_options('luogo'),
+//        'attributes' => array(
+//            'placeholder' =>  __( 'Seleziona i Luoghi', 'design_comuni_italia' ),
+//        ),
+//    ) );
 
     //CORPO
     $cmb_corpo = new_cmb2_box( array(

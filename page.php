@@ -32,7 +32,7 @@ get_header();
                         </div>
                     </div>
                 </div>
-                <div class="container ">
+                <div class="container">
                     <article class="article-wrapper">
 
                         <div class="row variable-gutters">
@@ -40,7 +40,7 @@ get_header();
                                 <?php
                                 the_content();
                                 ?>
-                                <div class="callout note">
+                                <div class="callout note d-none">
                                     <div class="callout-inner">
                                         <div class="callout-title">
                                             <svg class="icon"><use href="#it-info-circle"></use></svg>

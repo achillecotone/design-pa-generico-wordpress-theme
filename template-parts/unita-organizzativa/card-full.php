@@ -33,7 +33,7 @@
             <a class="text-decoration-none" href="<?php echo get_permalink($ufficio->ID); ?>">
                 <?php echo $ufficio->post_title; ?>
             </a>
-        </h5>
+        </h3>
         <div class="card-text">
             <?php foreach ($contatti as $full_contatto) { ?>
                 <div class="card-text mb-3">
@@ -94,7 +94,7 @@
                     <a href="<?php echo get_permalink($ufficio->ID); ?>">
                         <?php echo $ufficio->post_title; ?>
                     </a>
-                </h5>
+                </h3>
                 <div class="card-text">
                     <?php foreach ($contatti as $full_contatto) { ?>
                         <div class="card-text mb-3">

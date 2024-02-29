@@ -12,6 +12,9 @@ function dci_register_main_options_metabox() {
 
     dci_register_comune_options();
 
+    //CUSTOM THEME
+    dci_register_theme_options();
+
     dci_register_pagina_avvisi_options();
 
     dci_register_pagina_home_options();
@@ -60,6 +63,7 @@ function dci_options_display_with_tabs( $cmb_options ) {
                 <?php foreach ( $tabs as $option_key => $tab_title ) : ?>
                     <a class="nav-tab<?php if ( isset( $_GET['page'] ) && $option_key === $_GET['page'] ) : ?> nav-tab-active<?php endif; ?>" href="<?php menu_page_url( $option_key ); ?>"><?php echo wp_kses_post( $tab_title ); ?></a>
                 <?php endforeach; ?>
+
             </div>
 
             <form class="cmb-form" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" method="POST" id="<?php echo $cmb_options->cmb->cmb_id; ?>" enctype="multipart/form-data" encoding="multipart/form-data">
