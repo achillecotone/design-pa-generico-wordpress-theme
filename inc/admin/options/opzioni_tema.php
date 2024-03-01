@@ -117,6 +117,16 @@ function dci_register_theme_options(){
 
     ));
 
+    $social_themes->add_field(array(
+        'id' => $prefix . 'colore_txt_menu_mobile',
+        'name' => __('Colore Mobile', 'design_comuni_italia'),
+        'desc' => __('seleziona il colore del testo del menu mobile', 'design_comuni_italia'),
+        'type' => 'colorpicker',
+        'default' => '#0066CC',
+
+
+    ));
+
 
     $social_themes->add_field(array(
         'id' => $prefix . 'url_area_riservata',

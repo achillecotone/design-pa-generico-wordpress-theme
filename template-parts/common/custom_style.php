@@ -11,8 +11,10 @@ $bg_header = dci_get_option_tema("bg_header");
 $bg_menu = dci_get_option_tema("bg_menu");
 $bg_footer = dci_get_option_tema("bg_footer");
 $color_principale = dci_get_option_tema("colore_txt_principale");
-if ($a_custom_tema=='true') {?>
+$color_mobile = dci_get_option_tema("colore_txt_menu_mobile");
+if ($a_custom_tema == 'true') { ?>
     <style>
+
 
         .it-header-slim-wrapper {
             background-color: <?php echo $bg_slim_header?> !important;
@@ -23,7 +25,7 @@ if ($a_custom_tema=='true') {?>
         }
 
         .navbar {
-            background:<?php echo $bg_header?> !important;
+            background: <?php echo $bg_header?> !important;
         }
 
         .bg-primary {
@@ -39,7 +41,7 @@ if ($a_custom_tema=='true') {?>
         }
 
         .it-header-navbar-wrapper, .menu-wrapper {
-            background-color: <?php echo $bg_menu?> !important;
+            background-color: <?php echo $bg_header?> !important;
         }
 
 
@@ -51,11 +53,11 @@ if ($a_custom_tema=='true') {?>
         * BOTTONI
         **/
 
-        .it-carousel-wrapper .splide__pagination button.is-active{
+        .it-carousel-wrapper .splide__pagination button.is-active {
             background-color: <?php echo $bg_header?> !important;
         }
 
-        .chip .chip-label{
+        .chip .chip-label {
             color: <?php echo  $color_principale?> !important;
         }
 
@@ -72,7 +74,7 @@ if ($a_custom_tema=='true') {?>
             border-color: <?php echo $bg_header?> !important;
         }
 
-        .btn-outline-primary{
+        .btn-outline-primary {
             box-shadow: inset 0 0 0 2px <?php echo $bg_header?> !important;
             color: <?php echo  $color_principale?> !important;
         }
@@ -88,19 +90,18 @@ if ($a_custom_tema=='true') {?>
         }
 
         .btn-primary:focus,
-        .btn-primary.focus ,  .btn-primary:active{
-            <?php
-            list($r, $g, $b) = sscanf($bg_header, "#%02x%02x%02x");
-            ?>
-            box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075),0 0 0 .25rem rgba(<?=$r?>,<?=$g?>,<?=$b?>,.5)  !important;
+        .btn-primary.focus, .btn-primary:active {
+        <?php
+        list($r, $g, $b) = sscanf($bg_header, "#%02x%02x%02x");
+        ?> box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075), 0 0 0 .25rem rgba(<?=$r?>,<?=$g?>,<?=$b?>, .5) !important;
         }
 
 
-            /*
-             * ICONE
-             **/
+        /*
+         * ICONE
+         **/
 
-        a.read-more .icon{
+        a.read-more .icon {
             fill: <?php echo $bg_header?> !important;
         }
 
@@ -119,11 +120,11 @@ if ($a_custom_tema=='true') {?>
         */
 
         .cmp-breadcrumbs .breadcrumb-container .breadcrumb .breadcrumb-item a {
-            color:<?php echo $color_principale?> !important;
+            color: <?php echo $color_principale?> !important;
         }
 
         .link-list-wrapper ul li a span {
-            color:<?php echo $color_principale?> !important;
+            color: <?php echo $color_principale?> !important;
         }
 
         .t-primary {
@@ -131,47 +132,82 @@ if ($a_custom_tema=='true') {?>
         }
 
         a.read-more {
-            color:<?php echo $color_principale?> !important;
+            color: <?php echo $color_principale?> !important;
         }
 
-        .btn-dropdown{
-            color:<?php echo $color_principale?> !important;
+        .btn-dropdown {
+            color: <?php echo $color_principale?> !important;
         }
 
-        .point-list-wrapper .point-list .point-list-aside.point-list-primary{
-            color:<?php echo $color_principale?> !important;
+        .point-list-wrapper .point-list .point-list-aside.point-list-primary {
+            color: <?php echo $color_principale?> !important;
             border-color: <?php echo $color_principale?> !important;
         }
 
-        .cmp-navscroll .navbar.it-navscroll-wrapper .link-list-wrapper .accordion .accordion-header .accordion-button{
-            color:<?php echo $color_principale?> !important;
+        .cmp-navscroll .navbar.it-navscroll-wrapper .link-list-wrapper .accordion .accordion-header .accordion-button {
+            color: <?php echo $color_principale?> !important;
         }
 
         .point-list-wrapper .point-list .point-list-aside.point-list-primary::after {
-            background-color:<?php echo $color_principale?> !important;
+            background-color: <?php echo $color_principale?> !important;
         }
 
         .row-calendar .it-calendar-wrapper .card .card-text a {
-            color:<?php echo $color_principale?> !important;
+            color: <?php echo $color_principale?> !important;
             text-decoration: underline;
         }
 
         .evidence-section .list-item.active span {
-            color:<?php echo $color_principale?> !important;
+            color: <?php echo $color_principale?> !important;
         }
 
         .evidence-section .list-item.active:hover span {
-            color:<?php echo $bg_header?> !important;
+            color: <?php echo $bg_header?> !important;
             font-weight: bold;
+        }
+
+        .rating:not(:checked) > label:hover svg, .rating:not(:checked) > label:hover ~ label svg, .rating > input:checked ~ label svg {
+            fill: <?php echo $color_principale?> !important;
+        }
+
+        .form-check [type="radio"]:checked + label::before {
+            border-color: <?php echo $color_principale?> !important;
+        }
+
+        .form-check [type="radio"]:checked + label::after {
+            border-color: <?php echo $color_principale?> !important;
+            background-color: <?php echo $color_principale?> !important;
+        }
+
+
+        .it-header-wrapper .navbar-collapsable .logo-hamburger {
+            color: <?php echo $color_mobile;?> !important;
+        }
+
+        .it-header-wrapper .navbar-collapsable .it-socials {
+            color: <?php echo $color_mobile;?> !important;
+        }
+
+
+        .navbar .navbar-collapsable .navbar-nav li a.nav-link {
+            color: <?php echo $color_mobile;?> !important;
+            font-weight: 600;
+            padding: 13px 24px;
+            position: relative;
+        }
+
+        .it-header-wrapper .navbar-collapsable .it-socials ul li a svg {
+            fill: <?php echo $color_mobile;?> !important;
+        }
+
+        .card .card-body .category-top a.category{
+            color: <?php echo $color_principale;?> !important;
         }
 
         :root {
             --bs-link-color: <?php echo $bg_header?> !important;
-            --bs-link-hover-color : <?php echo $bg_header?> !important;
+            --bs-link-hover-color: <?php echo $bg_header?> !important;
         }
-
-
-
 
 
     </style>

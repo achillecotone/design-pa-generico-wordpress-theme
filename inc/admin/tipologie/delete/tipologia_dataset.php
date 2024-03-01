@@ -38,8 +38,8 @@ function dci_register_post_type_dataset() {
 }
 
 /**
-* Aggiungo label sotto il titolo
-*/
+ * Aggiungo label sotto il titolo
+ */
 add_action( 'edit_form_after_title', 'dci_dataset_add_content_after_title' );
 function dci_dataset_add_content_after_title($post) {
     if($post->post_type == "dataset")
@@ -130,13 +130,13 @@ function dci_add_dataset_metaboxes() {
     ) );
 
     $cmb_dataset->add_field( array(
-            'name'       => __('Dataset url *', 'design_comuni_italia' ),
-            'desc' => __( 'Link al dataset vero e proprio in un formato standard (es. csv' , 'design_comuni_italia' ),
-            'id'             => $prefix . 'dataset_url',
-            'type'       => 'text_url',
-            'attributes'    => array(
-                'required'    => 'required'
-            ),
+        'name'       => __('Dataset url *', 'design_comuni_italia' ),
+        'desc' => __( 'Link al dataset vero e proprio in un formato standard (es. csv' , 'design_comuni_italia' ),
+        'id'             => $prefix . 'dataset_url',
+        'type'       => 'text_url',
+        'attributes'    => array(
+            'required'    => 'required'
+        ),
     ) );
 
     //INFORMAZIONI

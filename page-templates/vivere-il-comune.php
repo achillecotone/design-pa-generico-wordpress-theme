@@ -1,7 +1,7 @@
 <?php
-/* Template Name: Vivere il comune
+/* Template Name: Eventi della PA
  *
- * Vivere il comune template file
+ * Eventi della PA template file
  *
  * @package Design_Comuni_Italia
  */
