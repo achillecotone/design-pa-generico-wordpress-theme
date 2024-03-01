@@ -2,7 +2,7 @@
 
 [![Join the #design siti comuni channel](https://img.shields.io/badge/Slack%20channel-%23design_siti_comuni-blue.svg)](https://developersitalia.slack.com/messages/design-siti-comuni/)
 
-## **Un sito per i Comuni Italiani**
+## **Un sito personalizzabile per le Pubbliche Amministrazioni Italiane**
 
 ### I primi passi con il tema Wordpress (1.7.5)
 
