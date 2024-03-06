@@ -381,8 +381,8 @@ class Breadcrumb_Trail {
 			    $group_name = dci_get_group_name(get_post_type());
 			    //console_log($group_name);
 			    switch ($group_name) {
-                    case 'Vivere il comune' :
-                        $this->items[] =  "<a href='".home_url("vivere-il-comune")."'>".__("Vivere il Comune", "design_comuni_italia")."</a>";
+                    case 'Eventi della PA' :
+                        $this->items[] =  "<a href='".home_url("eventi-della-pa")."'>".__("Eventi della PA", "design_comuni_italia")."</a>";
                         $this->items[] = get_the_title();
                         return;
                         break;
@@ -415,8 +415,6 @@ class Breadcrumb_Trail {
 			// If viewing an archive page.
 			elseif ( is_archive() ) {
 
-                //if(is_post_type_archive(dci_get_post_types_grouped('vivere-il-comune')))
-                    //$this->items[] =  "<a href='".home_url("vivere-il-comune")."'>".__("Vivere il Comune", "design_comuni_italia")."</a>";
 
                 if ( is_post_type_archive() ){
                     $this->add_post_type_archive_items();

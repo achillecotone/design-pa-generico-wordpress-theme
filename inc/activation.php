@@ -299,7 +299,7 @@ function createMenu()
     $menu_amministrazione = dci_create_menu(__('Amministrazione', "design_comuni_italia"));
     $menu_novita = dci_create_menu(__('Novità', "design_comuni_italia"));
     $menu_servizi = dci_create_menu(__('Categorie di Servizio', "design_comuni_italia"));
-    $menu_vivere_comune =  dci_create_menu(__('Vivere il Comune', "design_comuni_italia"));
+    $menu_vivere_comune =  dci_create_menu(__('Eventi della PA', "design_comuni_italia"));
     //$menu_documenti_dati = dci_create_menu(__('Tutti i documenti', "design_comuni_italia"));
     $menu_argomenti = dci_create_menu(__('Argomenti', 'design_comuni_italia'));
     $menu_info_1 = dci_create_menu('Info 1', 'design_comuni_italia');
@@ -312,7 +312,7 @@ function createMenu()
     dci_create_page_menu_item(__( 'Amministrazione', 'design_comuni_italia'),$menu_main);
     dci_create_page_menu_item(__( 'Novità', 'design_comuni_italia'),$menu_main);
     dci_create_page_menu_item(__( 'Servizi', 'design_comuni_italia'),$menu_main);
-    dci_create_page_menu_item(__( 'Vivere il Comune', 'design_comuni_italia'),$menu_main);
+    dci_create_page_menu_item(__( 'Eventi della PA', 'design_comuni_italia'),$menu_main);
     //assegno menu a header main location
     dci_add_menu_to_location($menu_main,'menu-header-main');
 

@@ -15,6 +15,10 @@ $color_mobile = dci_get_option_tema("colore_txt_menu_mobile");
 if ($a_custom_tema == 'true') { ?>
     <style>
 
+        aside .cmp-navscroll .navbar.it-navscroll-wrapper .link-list-wrapper ul li a.active {
+            border-left: 2px solid <?php echo $bg_header?> !important;
+        }
+
 
         .it-header-slim-wrapper {
             background-color: <?php echo $bg_slim_header?> !important;
@@ -80,13 +84,13 @@ if ($a_custom_tema == 'true') { ?>
         }
 
         .btn-primary {
-            background-color: <?php echo $bg_header?> !important;
-            border-color: <?php echo $bg_header?> !important;
+            background-color: <?php echo $bg_slim_header?> !important;
+            border-color: <?php echo $bg_slim_header?> !important;
         }
 
         .btn-primary:hover {
-            background-color: <?php echo $bg_slim_header?> !important;
-            border-color: <?php echo $bg_slim_header?> !important;
+            background-color: <?php echo $bg_header?> !important;
+            border-color: <?php echo $bg_header?> !important;
         }
 
         .btn-primary:focus,
@@ -100,6 +104,15 @@ if ($a_custom_tema == 'true') { ?>
         /*
          * ICONE
          **/
+
+
+        .card .categoryicon-top .icon {
+            fill: <?php echo $bg_header?> !important;
+        }
+
+        .it-list-wrapper .it-list .list-item .it-right-zone svg {
+            fill: <?php echo $bg_header?> !important;
+        }
 
         a.read-more .icon {
             fill: <?php echo $bg_header?> !important;
@@ -118,6 +131,15 @@ if ($a_custom_tema == 'true') { ?>
         /**
         * TESTO
         */
+
+
+        .u-grey-light {
+            color: #202a2e !important;
+        }
+
+        .it-list-wrapper .it-list .list-item:hover {
+            color: <?php echo $color_principale?> !important;
+        }
 
         .cmp-breadcrumbs .breadcrumb-container .breadcrumb .breadcrumb-item a {
             color: <?php echo $color_principale?> !important;

@@ -5,6 +5,7 @@
  *
  * @package Design_Comuni_Italia
  */
+
 global $post;
 get_header();
 

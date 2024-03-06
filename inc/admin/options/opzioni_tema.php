@@ -73,7 +73,7 @@ function dci_register_theme_options(){
         'name' => __('Slim Header', 'design_comuni_italia'),
         'desc' => __('seleziona il colore', 'design_comuni_italia'),
         'type' => 'colorpicker',
-        'default' => '#0066CC',
+        'default' => '#0059b3',
     ));
 
 
@@ -89,8 +89,8 @@ function dci_register_theme_options(){
 
     $social_themes->add_field(array(
         'id' => $prefix . 'bg_menu',
-        'name' => __('Menu', 'design_comuni_italia'),
-        'desc' => __('seleziona il colore del menu', 'design_comuni_italia'),
+        'name' => __('BG Menu', 'design_comuni_italia'),
+        'desc' => __('seleziona il colore del background del menu', 'design_comuni_italia'),
         'type' => 'colorpicker',
         'default' => '#0066CC',
 
@@ -103,7 +103,7 @@ function dci_register_theme_options(){
         'name' => __('Footer', 'design_comuni_italia'),
         'desc' => __('seleziona il colore del footer', 'design_comuni_italia'),
         'type' => 'colorpicker',
-        'default' => '#0066CC',
+        'default' => '#202a2e',
     ));
 
 
@@ -119,10 +119,10 @@ function dci_register_theme_options(){
 
     $social_themes->add_field(array(
         'id' => $prefix . 'colore_txt_menu_mobile',
-        'name' => __('Colore Mobile', 'design_comuni_italia'),
-        'desc' => __('seleziona il colore del testo del menu mobile', 'design_comuni_italia'),
+        'name' => __('Colore Menu', 'design_comuni_italia'),
+        'desc' => __('seleziona il colore del testo del menu (anche mobile)', 'design_comuni_italia'),
         'type' => 'colorpicker',
-        'default' => '#0066CC',
+        'default' => '#ffffff',
 
 
     ));

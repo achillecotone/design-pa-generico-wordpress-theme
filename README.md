@@ -80,7 +80,7 @@ Il tema WordPress è stato progettato per aderire rapidamente al modello di sito
 
 Tramite il tema WordPress, è possibile creare automaticamente le seguenti pagine:
 
-- _Homepage_, pagine di primo livello (_Amministrazione_, _Novità_, _Servizi_ e _Vivere il Comune_), _Documenti e dati_ e pagina _Argomenti_ (pagina lista), tramite il menu Configurazione;
+- _Homepage_, pagine di primo livello (_Amministrazione_, _Novità_, _Servizi_ e _Eventi della PA_), _Documenti e dati_ e pagina _Argomenti_ (pagina lista), tramite il menu Configurazione;
 
 - le pagine foglia _Notizia_, _Scheda servizio_, _Evento_, _Luogo_, _Documento pubblico_, _Dataset_, _Unità organizzativa_, _Persona pubblica_, tramite le voci nella barra a sinistra.
 
@@ -151,7 +151,7 @@ Cliccando su `Configurazione`, è possibile definire:
 - **Novità**: i contenuti e gli argomenti in evidenza nella pagina Novità;
 - **Servizi**: i contenuti in evidenza nella pagina Servizi;
 - **Documenti e Dati**: i contenuti e gli argomenti in evidenza nella pagina Documenti e Dati;
-- **Vivere il Comune**: i contenuti in evidenza nella pagina Vivere il Comune;
+- **Eventi della PA**: i contenuti in evidenza nella pagina Eventi della PA;
 - **Argomenti**: gli argomenti in evidenza nella pagina Argomenti;
 - **Assistenza e Contatti**: le informazioni utili per contattare il comune, come il numero verde;
 - **Link Utili**: i link utili che compaiono in homepage nella sezione di ricerca;

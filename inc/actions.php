@@ -133,7 +133,7 @@ function dci_create_menu_locations() {
         'menu-footer-col-1' => esc_html__( 'Menu footer (colonna 1 - "Amministrazione")', 'design_comuni_italia' ),
         'menu-footer-col-2' => esc_html__( 'Menu footer (colonna 2 - "Categorie di Servizio")', 'design_comuni_italia' ),
         'menu-footer-col-3-1' => esc_html__( 'Menu footer (colonna 3 - "Novità")', 'design_comuni_italia' ),
-        'menu-footer-col-3-2' => esc_html__( 'Menu footer (colonna 3 - "Vivere il Comune")', 'design_comuni_italia' ),
+        'menu-footer-col-3-2' => esc_html__( 'Menu footer (colonna 3 - "Eventi della PA")', 'design_comuni_italia' ),
         'menu-footer-info-1' => esc_html__( 'Menu footer (informazioni - colonna 1)', 'design_comuni_italia' ),
         'menu-footer-info-2' => esc_html__( 'Menu footer (informazioni - colonna 2)', 'design_comuni_italia' ),
         'menu-area-riservata' => esc_html__( 'Menu Utente Loggato ', 'design_comuni_italia' ),

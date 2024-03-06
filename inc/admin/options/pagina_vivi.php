@@ -5,7 +5,7 @@ function dci_register_pagina_vivi_options()
     $prefix = '';
 
     /**
-     * Opzioni Vivere il Comune
+     * Opzioni Eventi della PA
      */
     $args = array(
         'id' => 'dci_options_vivi',

@@ -6,6 +6,7 @@
  * @package Design_Comuni_Italia
  */
 global $post, $with_shadow;
+
 $search_url = esc_url( home_url( '/' ));
 
 $tipi_documento = get_terms( array(

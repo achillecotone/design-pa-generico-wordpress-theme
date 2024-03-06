@@ -73,9 +73,9 @@
         }
       }
     },
-    "Vivere il Comune": {
+    "Eventi della PA": {
       "title": "Eventi della Pubblica Amministrazione",
-      "slug": "eventi-pubblica-amministrazione",
+      "slug": "eventi-della-pa",
       "description": "Tutti gli eventi, le iniziative e i luoghi d’interesse per scoprire e vivere il territorio comunale.",
       "template_name": "vivere-il-comune",
       "children": {}
